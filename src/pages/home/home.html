@@ -7,18 +7,18 @@
 </ion-header>
 
 <ion-content padding>
- <ion-grid>
+ <ion-grid text-center>
    <ion-row>
      <ion-col>
        <h2>Enter the right Code</h2>
      </ion-col>
    </ion-row>
-   <ion-row>
+   <ion-row *ngIf="!checkWon()">
      <ion-col>
       Tap twice, press four times
      </ion-col>
    </ion-row>
-   <ion-row>
+   <ion-row *ngIf="checkWon()">
      <ion-col>
        You won!
      </ion-col>
