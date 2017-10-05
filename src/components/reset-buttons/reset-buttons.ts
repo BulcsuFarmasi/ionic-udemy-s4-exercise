@@ -4,11 +4,11 @@ import { Reset } from '../../interfaces/reset';
 
 @Component({
     selector: 'reset-buttons',
-    templateUrl: './reset-buttons.html'
+    templateUrl: 'reset-buttons.html'
 })
 
 export class ResetButtonsComponent{
-    protected onReset:EventEmitter<Reset> = new EventEmitter();
+    @Output() onReset:EventEmitter<Reset> = new EventEmitter();
 
     onResetAll () {
         let reset:Reset = {

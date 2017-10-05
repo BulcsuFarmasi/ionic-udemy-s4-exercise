@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { Reset } from '../../interfaces/reset'
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -20,5 +22,10 @@ export class HomePage {
 
     onTap () {
       this.tapped++;
+    }
+
+    reset (reset:Reset) {
+        this.tapped = (reset.tapped) ? 0 : this.tapped;
+        this.pressed = (reset.pressed) ? 0 : this.pressed;
     }
 }
