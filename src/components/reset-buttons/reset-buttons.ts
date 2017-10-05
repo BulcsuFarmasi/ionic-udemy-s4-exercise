@@ -8,5 +8,27 @@ import { Reset } from '../../interfaces/reset';
 })
 
 export class ResetButtonsComponent{
+    protected onReset:EventEmitter<Reset> = new EventEmitter();
 
+    onResetAll () {
+        let reset:Reset = {
+            tapped: true,
+            pressed: true
+        }
+        this.onReset.emit(reset);
+    }
+    onResetPressed() {
+        let reset:Reset = {
+            tapped: false,
+            pressed: true
+        }
+        this.onReset.emit(reset);
+    }
+    onResetTapped () {
+        let reset:Reset = {
+            tapped: true,
+            pressed: false
+        }
+        this.onReset.emit(reset);
+    }
 }

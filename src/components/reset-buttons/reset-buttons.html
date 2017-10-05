@@ -2,15 +2,24 @@
     <ion-row>
         <ion-col col-4>
             <button ion-button small
-                    full color="danger">Reset All</button>
+                    full color="danger"
+                    (click)="onResetAll()">
+                Reset All
+            </button>
         </ion-col>
         <ion-col col-4>
             <button ion-button small
-                    full color="danger">Reset "Taps"</button>
+                    full color="danger"
+                    (click)="onResetTapped()">
+                Reset "Taps"
+            </button>
         </ion-col>
         <ion-col col-4>
             <button ion-button small
-                    full color="danger">Reset "Presses"</button>
+                    full color="danger"
+                    (click)="onResetPressed()">
+                Reset "Presses"
+            </button>
         </ion-col>
     </ion-row>
 </ion-grid>
