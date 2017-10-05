@@ -36,10 +36,12 @@
   <ion-grid>
     <ion-row>
       <ion-col>
-        <button ion-button color="secondary" full>Tap here</button>
+        <button ion-button color="secondary"
+                full (tap)="onTap()">Tap here</button>
       </ion-col>
       <ion-col>
-        <button ion-button color="secondary" full>Press here</button>
+        <button ion-button color="secondary"
+                full (press)="onPress()">Press here</button>
       </ion-col>
     </ion-row>
   </ion-grid>
