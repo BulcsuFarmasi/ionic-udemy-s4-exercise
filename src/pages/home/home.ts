@@ -8,7 +8,7 @@ export class HomePage {
     public tapped:number = 0;
     public pressed:number = 0;
 
-    checkWon () {
+    checkWon ():boolean {
       let correctTapped = 2;
       let correctPressed = 4;
       return (correctTapped === this.tapped && correctPressed === this.pressed);
