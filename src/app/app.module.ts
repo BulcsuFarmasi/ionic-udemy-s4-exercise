@@ -7,10 +7,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { ResetButtonsComponent } from '../components/reset-buttons/reset-buttons';
+
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ResetButtonsComponent
   ],
   imports: [
     BrowserModule,
